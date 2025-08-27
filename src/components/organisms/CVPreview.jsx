@@ -32,13 +32,12 @@ const { personalInfo, experience, education, skills, myWorkProjects } = cvData;
           <div className="flex-1">
             <h1 className="text-4xl font-bold mb-2">{personalInfo.name}</h1>
 <p className="text-xl text-green-100 mb-4">{personalInfo.title}</p>
-            <div className="flex flex-wrap gap-6 text-sm">
+<div className="flex flex-wrap gap-6 text-sm">
               {personalInfo.email && (
                 <div className="flex items-center">
                   <ApperIcon name="Mail" size={16} className="mr-2" />
                   {personalInfo.email}
                 </div>
-              )}
               )}
               {personalInfo.location && (
                 <div className="flex items-center">
