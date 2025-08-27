@@ -165,6 +165,74 @@
     "5+ Technologies",
     "100% Passion"
   ],
+"myWorkProjects": [
+    {
+      "Id": 1,
+      "name": "Hotel Services",
+      "link": "https://stunning-cannoli-206cd4.netlify.app/",
+      "description": "Comprehensive hotel management system with booking and service features"
+    },
+    {
+      "Id": 2,
+      "name": "University Student LMS",
+      "link": "https://dazzling-moxie-51cd3e.netlify.app/",
+      "description": "Learning Management System for university students with course management"
+    },
+    {
+      "Id": 3,
+      "name": "Calculate Bill Percentage for Discount",
+      "link": "https://loquacious-dango-f515ca.netlify.app/",
+      "description": "Financial calculator tool for bill discounts and percentage calculations"
+    },
+    {
+      "Id": 4,
+      "name": "Puzzle Game",
+      "link": "https://puzzle-game-94kw-alphaproject.netlify.app/",
+      "description": "Interactive web-based puzzle game with engaging gameplay mechanics"
+    },
+    {
+      "Id": 5,
+      "name": "Lift Organizer Hub",
+      "link": "https://003-23517-7gz2cizgxdrb-deployed.easysite.ai/",
+      "description": "Organizational platform for lift and transportation management"
+    },
+    {
+      "Id": 6,
+      "name": "Recipe Sage",
+      "link": "https://recpirsage.vercel.app/",
+      "description": "Recipe management application with cooking tips and meal planning"
+    },
+    {
+      "Id": 7,
+      "name": "Paint By Marij",
+      "link": "https://paintbymarij.vercel.app/",
+      "description": "Digital art portfolio and painting showcase website"
+    },
+    {
+      "Id": 8,
+      "name": "Bank IBAN Generator",
+      "link": "https://ibangenius.vercel.app/",
+      "description": "Financial tool for generating and validating international bank account numbers"
+    },
+    {
+      "Id": 9,
+      "name": "Text Edit Flow Like Doc",
+      "link": "https://deft-hummingbird-ef32f1.netlify.app/",
+      "description": "Document editing application with collaborative features and rich text formatting"
+    },
+    {
+      "Id": 10,
+      "name": "Search Engine Optimization",
+      "link": "https://fanciful-kleicha-01ffb7.netlify.app/",
+      "description": "SEO analysis and optimization tool for website performance enhancement"
+    },
+    {
+      "Id": 11,
+      "name": "Baby Name Generator",
+      "link": "https://babynamegenerat.netlify.app/",
+      "description": "Creative tool for generating and discovering unique baby names with meanings"
+    }
+  ],
   "technicalExpertise": {
     "webDevelopment": [
       "Full-Stack Development (HTML5, CSS3, Python)",

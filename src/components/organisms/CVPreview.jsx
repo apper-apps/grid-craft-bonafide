@@ -19,7 +19,7 @@ const CVPreview = ({ cvData, template, isLoading }) => {
     );
   }
 
-  const { personalInfo, experience, education, skills } = cvData;
+const { personalInfo, experience, education, skills, myWorkProjects } = cvData;
 
   const ModernTemplate = () => (
     <div className="cv-preview w-full max-w-[210mm] mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
@@ -120,6 +120,34 @@ const CVPreview = ({ cvData, template, isLoading }) => {
                       <span className="text-gray-600">{edu.field}</span>
                       <span className="text-gray-500 text-sm">{edu.startYear} - {edu.endYear}</span>
                     </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+)}
+
+          {/* My Work Projects */}
+          {myWorkProjects && myWorkProjects.length > 0 && (
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                <ApperIcon name="FolderOpen" size={24} className="mr-3 text-primary" />
+                My Work Projects
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {myWorkProjects.map((project) => (
+                  <div key={project.Id} className="bg-gradient-to-br from-blue-50 to-purple-50 p-5 rounded-lg border border-blue-100 hover:shadow-md transition-shadow duration-200">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2 flex items-center">
+                      <ApperIcon name="ExternalLink" size={16} className="mr-2 text-primary" />
+                      <a 
+                        href={project.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-primary hover:text-accent underline decoration-2 underline-offset-2"
+                      >
+                        {project.name}
+                      </a>
+                    </h3>
+                    <p className="text-gray-700 text-sm leading-relaxed">{project.description}</p>
                   </div>
                 ))}
               </div>
@@ -235,6 +263,32 @@ const CVPreview = ({ cvData, template, isLoading }) => {
                       ))}
                     </ul>
                   )}
+                </div>
+              ))}
+            </div>
+          </section>
+)}
+
+        {/* My Work Projects */}
+        {myWorkProjects && myWorkProjects.length > 0 && (
+          <section className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 mb-4 border-b-2 border-gray-800 pb-2">
+              MY WORK PROJECTS
+            </h2>
+            <div className="grid grid-cols-1 gap-4">
+              {myWorkProjects.map((project) => (
+                <div key={project.Id} className="border-l-4 border-primary pl-4 py-2">
+                  <h3 className="font-semibold text-gray-900 mb-1">
+                    <a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-primary hover:text-accent underline decoration-2 underline-offset-2"
+                    >
+                      {project.name}
+                    </a>
+                  </h3>
+                  <p className="text-gray-700 text-sm">{project.description}</p>
                 </div>
               ))}
             </div>
