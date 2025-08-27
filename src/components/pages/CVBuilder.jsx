@@ -69,7 +69,7 @@ const cvResponse = await cvService.getCVData();
         isMobilePreview={isMobilePreview}
       />
 
-<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div className="w-full px-4 sm:px-6 lg:px-8 py-8">
         {/* Mobile View Toggle */}
         <div className="md:hidden mb-6">
           {isMobilePreview ? (
@@ -86,9 +86,9 @@ const cvResponse = await cvService.getCVData();
           ) : null}
         </div>
         {/* Desktop Two-Column Layout */}
-        <div className="hidden md:grid md:grid-cols-12 gap-8">
+<div className="hidden md:grid md:grid-cols-12 gap-8">
           {/* Left Column - Controls */}
-{/* Right Column - Preview */}
+          {/* Right Column - Preview */}
           <div className="col-span-8">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
@@ -97,23 +97,10 @@ const cvResponse = await cvService.getCVData();
               className="sticky top-24"
             >
               <div className="bg-white rounded-xl shadow-lg p-6 overflow-auto max-h-[80vh]">
-                <div className="flex items-center justify-between mb-6">
-                  <div>
-                    <h2 className="text-xl font-bold text-gray-900">Live Preview</h2>
-                    <p className="text-sm text-gray-600">
-CV Preview
-                    </p>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-sm text-gray-600">Auto-updating</span>
-                  </div>
-                </div>
-</div>
-                
                 <div className="transform scale-75 origin-top">
                   <CVPreview cvData={cvData} />
                 </div>
+              </div>
             </motion.div>
           </div>
         </div>

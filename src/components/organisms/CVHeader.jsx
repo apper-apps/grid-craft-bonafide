@@ -42,10 +42,6 @@ const CVHeader = ({ onMobilePreviewToggle, isMobilePreview }) => {
               {isMobilePreview ? "Edit" : "Preview"}
             </Button>
 
-<div className="hidden md:flex items-center space-x-2 bg-gradient-to-r from-green-100 to-green-50 px-3 py-1 rounded-full">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="text-xs font-medium text-gray-700">Live Preview</span>
-            </div>
           </div>
         </div>
       </div>

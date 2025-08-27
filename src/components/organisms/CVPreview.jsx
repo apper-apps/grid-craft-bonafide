@@ -175,15 +175,15 @@ rel="noopener noreferrer"
           </section>
 
           {/* Skills */}
-          {skills && skills.length > 0 && (
+{skills && skills.length > 0 && (
             <section className="mb-8">
               <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
                 <ApperIcon name="Code" size={20} className="mr-2 text-primary" />
-                Technical Skills
+                Skills
               </h2>
               <div className="space-y-3">
                 {skills.slice(0, 8).map((skill) => (
-                  <SkillBar key={skill.Id} skill={skill} showPercentage={true} />
+                  <SkillBar key={skill.Id} skill={skill} showPercentage={false} />
                 ))}
               </div>
             </section>
