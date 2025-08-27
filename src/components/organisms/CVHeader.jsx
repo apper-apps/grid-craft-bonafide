@@ -13,7 +13,7 @@ const CVHeader = ({ onMobilePreviewToggle, isMobilePreview }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+<div className="w-10 h-10 bg-gradient-to-br from-green-600 to-green-700 rounded-lg flex items-center justify-center">
               <ApperIcon name="FileText" size={20} className="text-white" />
             </div>
             <div>
@@ -42,7 +42,7 @@ const CVHeader = ({ onMobilePreviewToggle, isMobilePreview }) => {
               {isMobilePreview ? "Edit" : "Preview"}
             </Button>
 
-            <div className="hidden md:flex items-center space-x-2 bg-gradient-to-r from-green-100 to-blue-100 px-3 py-1 rounded-full">
+<div className="hidden md:flex items-center space-x-2 bg-gradient-to-r from-green-100 to-green-50 px-3 py-1 rounded-full">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
               <span className="text-xs font-medium text-gray-700">Live Preview</span>
             </div>

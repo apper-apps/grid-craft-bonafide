@@ -24,14 +24,14 @@ const { personalInfo, experience, education, skills, myWorkProjects } = cvData;
   const ModernTemplate = () => (
     <div className="cv-preview w-full max-w-[210mm] mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
       {/* Header with gradient background */}
-      <div className="bg-gradient-to-r from-primary to-accent text-white p-8">
+<div className="bg-gradient-to-r from-green-700 to-green-600 text-white p-8">
         <div className="flex items-center space-x-6">
           <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
             <ApperIcon name="User" size={40} className="text-white" />
           </div>
           <div className="flex-1">
             <h1 className="text-4xl font-bold mb-2">{personalInfo.name}</h1>
-            <p className="text-xl text-blue-100 mb-4">{personalInfo.title}</p>
+<p className="text-xl text-green-100 mb-4">{personalInfo.title}</p>
             <div className="flex flex-wrap gap-6 text-sm">
               {personalInfo.email && (
                 <div className="flex items-center">
@@ -39,11 +39,6 @@ const { personalInfo, experience, education, skills, myWorkProjects } = cvData;
                   {personalInfo.email}
                 </div>
               )}
-              {personalInfo.phone && (
-                <div className="flex items-center">
-                  <ApperIcon name="Phone" size={16} className="mr-2" />
-                  {personalInfo.phone}
-                </div>
               )}
               {personalInfo.location && (
                 <div className="flex items-center">
@@ -62,8 +57,8 @@ const { personalInfo, experience, education, skills, myWorkProjects } = cvData;
           {/* Professional Summary */}
           {personalInfo.summary && (
             <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                <ApperIcon name="User" size={24} className="mr-3 text-primary" />
+<h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                <ApperIcon name="User" size={24} className="mr-3 text-green-600" />
                 Professional Summary
               </h2>
               <p className="text-gray-700 leading-relaxed">{personalInfo.summary}</p>
@@ -113,7 +108,7 @@ const { personalInfo, experience, education, skills, myWorkProjects } = cvData;
               </h2>
               <div className="space-y-4">
                 {education.map((edu) => (
-                  <div key={edu.Id} className="bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-lg border border-blue-100">
+<div key={edu.Id} className="bg-gradient-to-r from-green-50 to-green-50 p-4 rounded-lg border border-green-100">
                     <h3 className="text-lg font-semibold text-gray-900">{edu.degree}</h3>
                     <p className="text-primary font-medium">{edu.institution}</p>
                     <div className="flex justify-between items-center mt-2">
@@ -141,8 +136,8 @@ const { personalInfo, experience, education, skills, myWorkProjects } = cvData;
                       <a 
                         href={project.link} 
                         target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-primary hover:text-accent underline decoration-2 underline-offset-2"
+rel="noopener noreferrer"
+                        className="text-green-600 hover:text-green-700 underline decoration-2 underline-offset-2"
                       >
                         {project.name}
                       </a>
@@ -164,16 +159,17 @@ const { personalInfo, experience, education, skills, myWorkProjects } = cvData;
               Contact
             </h2>
             <div className="space-y-3 text-sm">
-              {personalInfo.linkedin && (
+{personalInfo.linkedin && (
                 <div className="flex items-center">
-                  <ApperIcon name="Linkedin" size={16} className="mr-3 text-primary" />
-                  <span className="text-gray-700">{personalInfo.linkedin}</span>
-                </div>
-              )}
-              {personalInfo.website && (
-                <div className="flex items-center">
-                  <ApperIcon name="Globe" size={16} className="mr-3 text-primary" />
-                  <span className="text-gray-700">{personalInfo.website}</span>
+                  <ApperIcon name="Linkedin" size={16} className="mr-3 text-green-600" />
+                  <a 
+                    href={personalInfo.linkedin} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-green-600 hover:text-green-700 underline decoration-2 underline-offset-2"
+                  >
+                    {personalInfo.linkedin}
+                  </a>
                 </div>
               )}
             </div>
@@ -223,9 +219,8 @@ const { personalInfo, experience, education, skills, myWorkProjects } = cvData;
       <div className="p-8 border-b-4 border-gray-800">
         <h1 className="text-4xl font-bold text-gray-900 mb-2">{personalInfo.name}</h1>
         <p className="text-xl text-gray-700 mb-4">{personalInfo.title}</p>
-        <div className="flex flex-wrap gap-4 text-sm text-gray-600">
+<div className="flex flex-wrap gap-4 text-sm text-gray-600">
           {personalInfo.email && <span>{personalInfo.email}</span>}
-          {personalInfo.phone && <span>{personalInfo.phone}</span>}
           {personalInfo.location && <span>{personalInfo.location}</span>}
         </div>
       </div>
@@ -277,13 +272,13 @@ const { personalInfo, experience, education, skills, myWorkProjects } = cvData;
             </h2>
             <div className="grid grid-cols-1 gap-4">
               {myWorkProjects.map((project) => (
-                <div key={project.Id} className="border-l-4 border-primary pl-4 py-2">
+<div key={project.Id} className="border-l-4 border-green-600 pl-4 py-2">
                   <h3 className="font-semibold text-gray-900 mb-1">
                     <a 
                       href={project.link} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-primary hover:text-accent underline decoration-2 underline-offset-2"
+                      className="text-green-600 hover:text-green-700 underline decoration-2 underline-offset-2"
                     >
                       {project.name}
                     </a>

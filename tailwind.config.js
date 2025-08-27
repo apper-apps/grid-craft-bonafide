@@ -11,9 +11,9 @@ export default {
         'body': ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
-        primary: '#2563eb',
+primary: '#16a34a',
         secondary: '#64748b',
-        accent: '#3b82f6',
+        accent: '#15803d',
         surface: '#f8fafc',
         background: '#ffffff',
       },

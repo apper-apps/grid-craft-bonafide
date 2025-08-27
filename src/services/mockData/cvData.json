@@ -3,11 +3,9 @@
     "name": "Marij Maryam",
     "title": "Web Developer & BSBA Student",
     "email": "marij.maryam@example.com",
-    "phone": "+92 xxx xxx xxxx",
-    "location": "Pindi Gheb, Pakistan",
+"location": "Pindi Gheb, Pakistan",
     "summary": "I am a passionate web developer and BSBA student with a strong foundation in modern web technologies. My journey in web development began with a curiosity about how websites work, which quickly evolved into a deep passion for creating digital experiences. Currently pursuing my Bachelor of Business Administration, I combine academic learning with hands-on project experience to build my skills and create meaningful web solutions.",
-    "linkedin": "linkedin.com/in/marij-maryam",
-    "website": "marij-portfolio.com"
+    "linkedin": "https://www.linkedin.com/in/marij-maryam-40a428375/"
   },
   "experience": [
     {
