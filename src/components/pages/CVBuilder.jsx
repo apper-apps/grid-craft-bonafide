@@ -1,17 +1,15 @@
-import { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import CVHeader from "@/components/organisms/CVHeader";
-import TemplateSelector from "@/components/organisms/TemplateSelector";
 import CVPreview from "@/components/organisms/CVPreview";
+import CVHeader from "@/components/organisms/CVHeader";
 import ExportControls from "@/components/organisms/ExportControls";
-import Loading from "@/components/ui/Loading";
 import Error from "@/components/ui/Error";
-import cvService from "@/services/api/cvService";
+import Loading from "@/components/ui/Loading";
 import templateService from "@/services/api/templateService";
+import cvService from "@/services/api/cvService";
 
 const CVBuilder = () => {
   const [cvData, setCvData] = useState(null);
-  const [selectedTemplate, setSelectedTemplate] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [isMobilePreview, setIsMobilePreview] = useState(false);
@@ -22,13 +20,8 @@ const CVBuilder = () => {
       setError(null);
       
       // Load CV data and default template
-      const [cvResponse, templateResponse] = await Promise.all([
-        cvService.getCVData(),
-        templateService.getDefaultTemplate()
-      ]);
-      
+const cvResponse = await cvService.getCVData();
       setCvData(cvResponse);
-      setSelectedTemplate(templateResponse);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -40,11 +33,6 @@ const CVBuilder = () => {
     loadData();
   }, []);
 
-  const handleTemplateSelect = (template) => {
-    setSelectedTemplate(template);
-    // Save selected template to localStorage
-    localStorage.setItem("selectedTemplate", JSON.stringify(template));
-  };
 
   const handleMobilePreviewToggle = () => {
     setIsMobilePreview(!isMobilePreview);
@@ -77,14 +65,14 @@ const CVBuilder = () => {
 
   return (
     <div className="min-h-screen bg-surface">
-      <CVHeader 
+<CVHeader 
         onMobilePreviewToggle={handleMobilePreviewToggle}
         isMobilePreview={isMobilePreview}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Mobile View Toggle */}
-        <div className="md:hidden mb-6">
+<div className="md:hidden mb-6">
           {isMobilePreview ? (
             <motion.div
               key="mobile-preview"
@@ -94,34 +82,17 @@ const CVBuilder = () => {
               transition={{ duration: 0.3 }}
               className="space-y-6"
             >
-              <CVPreview cvData={cvData} template={selectedTemplate} />
-              <ExportControls cvData={cvData} template={selectedTemplate} />
+              <CVPreview cvData={cvData} />
+              <ExportControls cvData={cvData} />
             </motion.div>
-          ) : (
-            <motion.div
-              key="mobile-controls"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 20 }}
-              transition={{ duration: 0.3 }}
-            >
-              <TemplateSelector 
-                selectedTemplate={selectedTemplate}
-                onTemplateSelect={handleTemplateSelect}
-              />
-            </motion.div>
-          )}
+          ) : null}
         </div>
 
         {/* Desktop Two-Column Layout */}
         <div className="hidden md:grid md:grid-cols-12 gap-8">
           {/* Left Column - Controls */}
-          <div className="col-span-4 space-y-6">
-            <TemplateSelector 
-              selectedTemplate={selectedTemplate}
-              onTemplateSelect={handleTemplateSelect}
-            />
-            <ExportControls cvData={cvData} template={selectedTemplate} />
+<div className="col-span-4 space-y-6">
+            <ExportControls cvData={cvData} />
           </div>
 
           {/* Right Column - Preview */}
@@ -137,7 +108,7 @@ const CVBuilder = () => {
                   <div>
                     <h2 className="text-xl font-bold text-gray-900">Live Preview</h2>
                     <p className="text-sm text-gray-600">
-                      {selectedTemplate?.name} Template
+CV Preview
                     </p>
                   </div>
                   <div className="flex items-center space-x-2">
@@ -145,11 +116,11 @@ const CVBuilder = () => {
                     <span className="text-sm text-gray-600">Auto-updating</span>
                   </div>
                 </div>
+</div>
                 
                 <div className="transform scale-75 origin-top">
-                  <CVPreview cvData={cvData} template={selectedTemplate} />
+                  <CVPreview cvData={cvData} />
                 </div>
-              </div>
             </motion.div>
           </div>
         </div>
