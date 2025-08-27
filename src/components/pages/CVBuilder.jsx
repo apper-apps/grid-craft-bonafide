@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import CVPreview from "@/components/organisms/CVPreview";
 import CVHeader from "@/components/organisms/CVHeader";
-import ExportControls from "@/components/organisms/ExportControls";
 import Error from "@/components/ui/Error";
 import Loading from "@/components/ui/Loading";
 import templateService from "@/services/api/templateService";
@@ -70,9 +69,9 @@ const cvResponse = await cvService.getCVData();
         isMobilePreview={isMobilePreview}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Mobile View Toggle */}
-<div className="md:hidden mb-6">
+        <div className="md:hidden mb-6">
           {isMobilePreview ? (
             <motion.div
               key="mobile-preview"
@@ -83,19 +82,13 @@ const cvResponse = await cvService.getCVData();
               className="space-y-6"
             >
               <CVPreview cvData={cvData} />
-              <ExportControls cvData={cvData} />
             </motion.div>
           ) : null}
         </div>
-
         {/* Desktop Two-Column Layout */}
         <div className="hidden md:grid md:grid-cols-12 gap-8">
           {/* Left Column - Controls */}
-<div className="col-span-4 space-y-6">
-            <ExportControls cvData={cvData} />
-          </div>
-
-          {/* Right Column - Preview */}
+{/* Right Column - Preview */}
           <div className="col-span-8">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
