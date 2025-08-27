@@ -1,0 +1,78 @@
+[
+  {
+    "Id": 1,
+    "name": "Modern Professional",
+    "style": "modern",
+    "layout": {
+      "columns": 2,
+      "headerStyle": "gradient",
+      "sectionSpacing": "comfortable",
+      "typography": "clean"
+    },
+    "colorScheme": {
+      "primary": "#2563eb",
+      "secondary": "#64748b",
+      "accent": "#3b82f6",
+      "background": "#ffffff",
+      "text": "#1e293b"
+    },
+    "preview": "/api/placeholder/300/400"
+  },
+  {
+    "Id": 2,
+    "name": "Classic Traditional",
+    "style": "classic",
+    "layout": {
+      "columns": 1,
+      "headerStyle": "traditional",
+      "sectionSpacing": "standard",
+      "typography": "serif"
+    },
+    "colorScheme": {
+      "primary": "#1f2937",
+      "secondary": "#6b7280",
+      "accent": "#374151",
+      "background": "#ffffff",
+      "text": "#111827"
+    },
+    "preview": "/api/placeholder/300/400"
+  },
+  {
+    "Id": 3,
+    "name": "Technical Developer",
+    "style": "technical",
+    "layout": {
+      "columns": 2,
+      "headerStyle": "compact",
+      "sectionSpacing": "tight",
+      "typography": "mono"
+    },
+    "colorScheme": {
+      "primary": "#059669",
+      "secondary": "#6b7280",
+      "accent": "#10b981",
+      "background": "#ffffff",
+      "text": "#1f2937"
+    },
+    "preview": "/api/placeholder/300/400"
+  },
+  {
+    "Id": 4,
+    "name": "Creative Portfolio",
+    "style": "creative",
+    "layout": {
+      "columns": 1,
+      "headerStyle": "artistic",
+      "sectionSpacing": "generous",
+      "typography": "display"
+    },
+    "colorScheme": {
+      "primary": "#7c3aed",
+      "secondary": "#64748b",
+      "accent": "#8b5cf6",
+      "background": "#ffffff",
+      "text": "#1e293b"
+    },
+    "preview": "/api/placeholder/300/400"
+  }
+]

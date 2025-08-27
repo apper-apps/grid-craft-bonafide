@@ -1,0 +1,204 @@
+{
+  "personalInfo": {
+    "name": "Marij Maryam",
+    "title": "Web Developer & BSBA Student",
+    "email": "marij.maryam@example.com",
+    "phone": "+92 xxx xxx xxxx",
+    "location": "Pindi Gheb, Pakistan",
+    "summary": "I am a passionate web developer and BSBA student with a strong foundation in modern web technologies. My journey in web development began with a curiosity about how websites work, which quickly evolved into a deep passion for creating digital experiences. Currently pursuing my Bachelor of Business Administration, I combine academic learning with hands-on project experience to build my skills and create meaningful web solutions.",
+    "linkedin": "linkedin.com/in/marij-maryam",
+    "website": "marij-portfolio.com"
+  },
+  "experience": [
+    {
+      "Id": 1,
+      "company": "Styleshop (SMC-Private) Limited",
+      "position": "Intern",
+      "location": "Islamabad",
+      "startDate": "2024-05",
+      "endDate": "2024-12",
+      "description": "Worked as an intern gaining hands-on experience in web development and e-commerce solutions.",
+      "achievements": [
+        "Contributed to e-commerce platform development",
+        "Learned modern web development practices",
+        "Collaborated with development team on multiple projects"
+      ]
+    },
+    {
+      "Id": 2,
+      "company": "Dotpay Technologies (Private) Limited",
+      "position": "Intern",
+      "location": "Pindi Gheb",
+      "startDate": "2025-01",
+      "endDate": "2025-06",
+      "description": "Currently working as an intern focusing on payment technologies and web development.",
+      "achievements": [
+        "Working on payment gateway integrations",
+        "Developing web applications with modern frameworks",
+        "Learning fintech industry best practices"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "Id": 1,
+      "institution": "Virtual University of Pakistan",
+      "degree": "Bachelor of Business Administration",
+      "field": "Business Administration",
+      "startYear": "2022",
+      "endYear": "2025",
+      "gpa": ""
+    },
+    {
+      "Id": 2,
+      "institution": "Oxford College Pindi Gheb",
+      "degree": "Intermediate",
+      "field": "Computer Science (ICS)",
+      "startYear": "2020",
+      "endYear": "2022",
+      "gpa": ""
+    }
+  ],
+  "skills": [
+    {
+      "Id": 1,
+      "name": "HTML5",
+      "category": "Frontend Technologies",
+      "level": 95,
+      "years": 2
+    },
+    {
+      "Id": 2,
+      "name": "CSS3",
+      "category": "Frontend Technologies",
+      "level": 90,
+      "years": 2
+    },
+    {
+      "Id": 3,
+      "name": "Tailwind CSS",
+      "category": "CSS Frameworks",
+      "level": 85,
+      "years": 1
+    },
+    {
+      "Id": 4,
+      "name": "Git",
+      "category": "Development Tools",
+      "level": 85,
+      "years": 2
+    },
+    {
+      "Id": 5,
+      "name": "Figma",
+      "category": "Design Tools",
+      "level": 70,
+      "years": 1
+    },
+    {
+      "Id": 6,
+      "name": "Python",
+      "category": "Programming Languages",
+      "level": 65,
+      "years": 1
+    },
+    {
+      "Id": 7,
+      "name": "WordPress",
+      "category": "CMS Development",
+      "level": 80,
+      "years": 2
+    },
+    {
+      "Id": 8,
+      "name": "PHP",
+      "category": "Backend Technologies",
+      "level": 70,
+      "years": 1
+    },
+    {
+      "Id": 9,
+      "name": "Firebase",
+      "category": "Cloud Services",
+      "level": 75,
+      "years": 1
+    },
+    {
+      "Id": 10,
+      "name": "GitHub",
+      "category": "Development Tools",
+      "level": 85,
+      "years": 2
+    },
+    {
+      "Id": 11,
+      "name": "Bootstrap",
+      "category": "CSS Frameworks",
+      "level": 80,
+      "years": 2
+    },
+    {
+      "Id": 12,
+      "name": "MySQL",
+      "category": "Databases",
+      "level": 75,
+      "years": 1
+    },
+    {
+      "Id": 13,
+      "name": "VSCode",
+      "category": "Development Tools",
+      "level": 90,
+      "years": 2
+    },
+    {
+      "Id": 14,
+      "name": "Digital Marketing",
+      "category": "Marketing & SEO",
+      "level": 85,
+      "years": 2
+    }
+  ],
+  "achievements": [
+    "2+ Years Learning",
+    "10+ Projects Built",
+    "5+ Technologies",
+    "100% Passion"
+  ],
+  "technicalExpertise": {
+    "webDevelopment": [
+      "Full-Stack Development (HTML5, CSS3, Python)",
+      "API Integration (Google APIs, Third-party Services)",
+      "Game Development (Web-based Logic, HTML Canvas)",
+      "Browser Extension Development",
+      "Modern CSS (Tailwind CSS, Responsive Design)"
+    ],
+    "wordpressCMS": [
+      "WordPress Theme & Plugin Development",
+      "Custom Gutenberg Blocks",
+      "E-commerce Solutions",
+      "University & Educational Websites",
+      "Hotel & Portfolio Websites"
+    ],
+    "cloudDevOps": [
+      "Version Control (Git, GitHub)",
+      "Web Hosting & DNS Management",
+      "Cloud Hosting (Firebase, Static Sites)",
+      "Performance Optimization",
+      "Security & Backup Solutions"
+    ],
+    "projectManagement": [
+      "Product Requirements Document (PRD) Creation",
+      "Project Planning & Timeline Management",
+      "Technical Documentation & Code Reviews",
+      "Cross-functional Team Collaboration"
+    ],
+    "emergingTech": [
+      "AI-Powered Development Tools",
+      "Modern IDEs (VSCode, Cursor, Windsurf)",
+      "No-Code/Low-Code Platforms",
+      "Digital Marketing & SEO Strategy",
+      "Social Media Management & Analytics"
+    ]
+  }
+}
